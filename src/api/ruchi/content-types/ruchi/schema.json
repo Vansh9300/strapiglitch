@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ruchis",
+  "info": {
+    "singularName": "ruchi",
+    "pluralName": "ruchis",
+    "displayName": "Ruchi",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Pulses",
+        "Rice",
+        "Spices",
+        "Aata",
+        "Pickles",
+        "Tea",
+        "Others"
+      ],
+      "required": true
+    },
+    "size": {
+      "type": "json",
+      "required": true
+    },
+    "speciality1name": {
+      "type": "string",
+      "required": true,
+      "default": "Pure & Fresh"
+    },
+    "speciality1description": {
+      "type": "text",
+      "required": true,
+      "default": "From farm to plate, fresh and delicious every time"
+    },
+    "speciality1image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "speciality2name": {
+      "type": "string",
+      "required": true,
+      "default": "Weight Management"
+    },
+    "speciality2description": {
+      "type": "text",
+      "required": true,
+      "default": "Extremely rich in protein and fibre, it helps reduce weight."
+    },
+    "speciality2image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "speciality3name": {
+      "type": "string",
+      "required": true,
+      "default": "Healthy Heart"
+    },
+    "speciality3description": {
+      "type": "text",
+      "required": true,
+      "default": "Dal helps in reducing bad cholesterol and regulates blood pressure."
+    },
+    "speciality3image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

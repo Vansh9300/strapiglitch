@@ -1,0 +1,99 @@
+{
+  "kind": "singleType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "pulses",
+        "rice",
+        "spices",
+        "pickles",
+        "aata",
+        "others"
+      ],
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specialty1name": {
+      "type": "string",
+      "default": "Pure & Fresh"
+    },
+    "specialty1image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "speciality1description": {
+      "type": "text",
+      "required": true,
+      "default": "We ensure it’s pure & fresh from the farm to your plate."
+    },
+    "specialty2name": {
+      "type": "string",
+      "required": true,
+      "default": "Weight Management"
+    },
+    "speciality2description": {
+      "type": "text",
+      "default": "Extremely rich in protein and fibre, it helps reduce weight.",
+      "required": true
+    },
+    "speciality2image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "speciality3name": {
+      "type": "string",
+      "required": true,
+      "default": "Healthy Heart"
+    },
+    "speciality3description": {
+      "type": "text",
+      "required": true,
+      "default": "Dal helps in reducing bad cholesterol and regulates blood pressure."
+    },
+    "speciality3image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
